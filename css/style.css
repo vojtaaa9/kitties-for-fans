@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+}
+
+.skiplinks {
+    left: -9999em;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: -999em;
+    z-index: 100;
+}
+
+.skiplinks a {
+    left: -9999em;
+    position: absolute;
+    text-indent: 0;
+    z-index: 4;
+}
+
+.skiplinks a:focus {
+    background-color: #EDA521;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: bold;
+    left: 0;
+    line-height: 2.7rem;
+    padding: 0 9px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    white-space: nowrap;
+}
+
+.container {
+    padding: 0 0.5em;
+}
+
+header {
+    background-color: #EDA521;
+    color: #1B1B1E;
+    width: 100%;
+    padding: 1em;
+    box-shadow: 1px 1px 1px 0px rgba(31,31,31,0.3);
+    margin-bottom: 1em;
+}
+
+.logo {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.logo-container {
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+
+/* Hamburger Menu */
+.menu-container {
+    height: 25px;
+    display: inline-block;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 2em;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 70px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  -webkit-touch-callout: none;
+}
+
+#menu
+{
+  position: absolute;
+  width: 250px;
+  margin: -10px 0 0 -10px;
+  height: 100vh;
+  padding: 10px;
+  top: 0;
+  background: #1B1B1E;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.23s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  color: white;
+}
+
+#menu li a {
+    color: inherit;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.menu-close {
+    float: right;
+    padding: 0 5px;
+}

@@ -1,48 +1,70 @@
 <!doctype html>
 
 <html class="no-js" lang="en">
-
   <head>
-
     <meta charset="utf-8">
-    
-    <title>
-      Kitties for Cat Fans
-    </title>
-
-    <meta name="description" content="____Description____">    
-
+    <title>Kitties for Cat Fansite</title>
+    <meta name="description" content="All about kitties and cats">    
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 
     <script>
         document.documentElement.className =
-         document.documentElement.className.replace("no-js","js");
+        document.documentElement.className.replace("no-js","js");
     </script>
 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/blanka.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#eda521">
+    <meta name="theme-color" content="#eda521">
   </head>
-  
   <body>
 
-    <a href="#main">skip to main content</a>
+    <p class="skiplinks">
+      <a href="#main">skip to main content</a>
+    </p>
+
+    <header>
+      <a href="/" class="logo-container" ><img src="/img/logo.svg" alt="Kitties for fun" class="logo"s></a>
+      <nav role="navigation" class="menu-container">
+        <div id="menuToggle">
+          <input id="menu-toggle" type="checkbox" />
+          ☰ Menu
+          <ul id="menu">
+            <li>Menu: <div class="menu-close">✕</div></li>
+            <li><a href="/random.html">Random image</a></li>
+            <li><a href="/impressum.html">Impressum</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <div class="container">
-
       <main id="main" role="main" class="content">
 
         <h1>
-          Hello, I'm Blanka!<br>
-          Minimal HTML boilerplate.
+          Kitties for Fans
         </h1>
         
       </main><!-- /.content -->
+
+      <footer>Here goes some lorem ipsum and links</footer>
       
 
     </div><!-- /.container -->
   
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     
   </body>
